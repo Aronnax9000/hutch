@@ -7,8 +7,7 @@ Rails.application.routes.draw do
 end
 
 Rails.application.routes.draw do
+  root "welcome#index"
   get 'welcome/index'
-  root "home#index"
-
-  get "/hutches", to: "hutches#index"
+  get "/barns", to: "barns#index"
 end
