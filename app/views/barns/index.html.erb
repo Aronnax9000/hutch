@@ -1,11 +1,9 @@
 <h1>Barns</h1>
-
+<%= link_to "New Barn", new_barn_path %>
 <ul>
   <% @barns.each do |barn| %>
     <li>
-      <a href="/barns/<%= barn.id %>">
-        <%= barn.name %>
-      </a>
+      <%= link_to barn.name, barn %>
     </li>
   <% end %>
 </ul>

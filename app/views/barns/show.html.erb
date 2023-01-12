@@ -1,0 +1,11 @@
+<h1>Barn <%= @barn.name %></h1>
+<%= link_to "Barns", barns_path %>
+<p><%= @barn.description %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_barn_path(@barn) %></li>
+  <li><%= link_to "Destroy", barn_path(@barn), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>

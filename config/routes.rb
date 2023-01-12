@@ -9,5 +9,5 @@ end
 Rails.application.routes.draw do
   root "welcome#index"
   get 'welcome/index'
-  get "/barns", to: "barns#index"
+  resources :barns
 end
