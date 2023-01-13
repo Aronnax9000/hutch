@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  descripton: MyText
+  x: 1
+  'y': 1
+  z: 1
+  dx: 1
+  dy: 1
+  dz: 1
+
+two:
+  name: MyString
+  descripton: MyText
+  x: 1
+  'y': 1
+  z: 1
+  dx: 1
+  dy: 1
+  dz: 1

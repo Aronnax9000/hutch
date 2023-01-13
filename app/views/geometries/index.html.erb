@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Geometries</h1>
+
+<div id="geometries">
+  <% @geometries.each do |geometry| %>
+    <%= render geometry %>
+    <p>
+      <%= link_to "Show this geometry", geometry %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New geometry", new_geometry_path %>

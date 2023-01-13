@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @geometry %>
+
+<div>
+  <%= link_to "Edit this geometry", edit_geometry_path(@geometry) %> |
+  <%= link_to "Back to geometries", geometries_path %>
+
+  <%= button_to "Destroy this geometry", @geometry, method: :delete %>
+</div>

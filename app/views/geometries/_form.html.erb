@@ -1,0 +1,57 @@
+<%= form_with(model: geometry) do |form| %>
+  <% if geometry.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(geometry.errors.count, "error") %> prohibited this geometry from being saved:</h2>
+
+      <ul>
+        <% geometry.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :descripton, style: "display: block" %>
+    <%= form.text_area :descripton %>
+  </div>
+
+  <div>
+    <%= form.label :x, style: "display: block" %>
+    <%= form.number_field :x %>
+  </div>
+
+  <div>
+    <%= form.label :y, style: "display: block" %>
+    <%= form.number_field :y %>
+  </div>
+
+  <div>
+    <%= form.label :z, style: "display: block" %>
+    <%= form.number_field :z %>
+  </div>
+
+  <div>
+    <%= form.label :dx, style: "display: block" %>
+    <%= form.number_field :dx %>
+  </div>
+
+  <div>
+    <%= form.label :dy, style: "display: block" %>
+    <%= form.number_field :dy %>
+  </div>
+
+  <div>
+    <%= form.label :dz, style: "display: block" %>
+    <%= form.number_field :dz %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
