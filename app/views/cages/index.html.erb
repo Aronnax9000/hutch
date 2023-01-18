@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Cages</h1>
+
+<div id="cages">
+  <% @cages.each do |cage| %>
+    <%= render cage %>
+    <p>
+      <%= link_to "Show this cage", cage %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New cage", new_cage_path %>

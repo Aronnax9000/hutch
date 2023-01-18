@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Stacks</h1>
+
+<div id="stacks">
+  <% @stacks.each do |stack| %>
+    <%= render stack %>
+    <p>
+      <%= link_to "Show this stack", stack %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New stack", new_stack_path %>

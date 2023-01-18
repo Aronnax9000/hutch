@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @stack %>
+
+<div>
+  <%= link_to "Edit this stack", edit_stack_path(@stack) %> |
+  <%= link_to "Back to stacks", stacks_path %>
+
+  <%= button_to "Destroy this stack", @stack, method: :delete %>
+</div>
