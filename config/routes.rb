@@ -1,5 +1,6 @@
 
 Rails.application.routes.draw do
+  resources :rabbits
   resources :cages
   resources :stacks
   resources :blocks
